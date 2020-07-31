@@ -1,0 +1,18 @@
+extends base.pug
+
+block content
+  div.row
+     div.col.s5.offset-s3 
+        div.card.blue-grey.darken-1
+           div.card-action.purple
+              h4 Авторизация
+           div.card-content.white-text
+             form(method='post')
+                div.form-field
+                   label(for='login') Логин
+                   input(type='text', id='login', name='login', value='')
+                div.form-field
+                   label(for='login') Пароль
+                   input(type='password', id='password', name='password', value='')
+                div.form-field
+                   button.btn.yellow.darken-4 Войти
